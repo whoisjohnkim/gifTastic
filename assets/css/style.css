@@ -1,0 +1,24 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gifButton {
+    margin: 20px 10px;
+}
+
+#buttonContainer {
+    border-bottom: 2px solid grey;
+    background-color: lightgrey;
+}
+
+#gifContainer {
+    margin-top: 100px;
+    border: 2px solid grey;
+}
+
+.sidebar {
+    margin-top: 100px;
+    border: 2px solid black;
+    padding: 20px;
+}
