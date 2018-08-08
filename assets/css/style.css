@@ -4,6 +4,9 @@ body {
     background-size: 100%;
 }
 
+/* .container {
+    width: 100%;
+} */
 
 .flex-container {
     display: flex;
@@ -42,4 +45,11 @@ body {
     border: 2px solid black;
     background: white;
     padding: 20px;
+}
+p {
+    margin-left: 10px;
+}
+
+img {
+    margin: 10px;
 }
