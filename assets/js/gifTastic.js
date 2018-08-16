@@ -1,7 +1,9 @@
 // API KEY: EVjjnZ50jeS8CowAn09WpfphaeNpOgSI
 
+// Initial buttons
 var topics = ["Parks and Rec", "Black Mirror", "SpongeBob", "Jimmy Neutron", "Game of Thrones", "The Office", "House of Cards"];
 renderButtons();
+// Create buttons based on topics array
 function renderButtons(){
     $("#buttonContainer").empty();
     for(var i = 0; i < topics.length; i++){
@@ -16,7 +18,6 @@ function renderButtons(){
     }
 
     $(".gifButton").on("click", function() {
-        // alert($(this).attr("data-show"));
         var show = $(this).attr("data-show");
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
           show + "&api_key=EVjjnZ50jeS8CowAn09WpfphaeNpOgSI&limit=10";
@@ -63,7 +64,6 @@ function renderButtons(){
 
 // Submit button to create to push onto topic and re-render buttons
 $("#submitButton").on("click", function(){
-    // event.preventDefault();
     // Make sure that the search term isn't empty
     if($("#gifSearchTerm").val() !== ""){
         topics.push($("#gifSearchTerm").val());
